@@ -17,7 +17,7 @@ int main() {
         unsigned long long int liczba_wierzcholkow;
         int wszystkie_krawedzie = 0;
 
-        // Wczytywanie grafa
+        // Wczytywanie 
         cin >> liczba_wierzcholkow;
         Graf graf(liczba_wierzcholkow);
         for (unsigned long long int i = 0; i < liczba_wierzcholkow; i++) {
