@@ -32,6 +32,6 @@ bool Dwudzielnosc(Wierzcholek* wierzcholki, char* strona, unsigned long long int
         }
     }
 
-    delete[] queue; // Zwalnianie pamiêci po zakoñczeniu
+    delete[] queue; 
     return true;
 }
