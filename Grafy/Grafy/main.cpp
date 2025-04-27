@@ -89,59 +89,10 @@ int main() {
         cout << endl;
 
 
-        /*for (int i = 0; i < liczba_wierzcholkow; i++) {
-            int* tmp = new int[graf.wierzcholki[i].liczba_sasiadow];
-            int h = 0;
-            for (int j = 0; j < graf.wierzcholki[i].liczba_sasiadow; j++) {
-                if (kolor[graf.wierzcholki[i].sasiedzi[j]->nr_wierzcholka] != 0) {
-                    tmp[h] = kolor[graf.wierzcholki[i].sasiedzi[j]->nr_wierzcholka];
-                    h++;
-                }
-            }
-            if (tmp[0] != 0) {
-                if (h > 1) {
-                    quickSort(tmp, 0, h - 1);
-                }
-                if (tmp[0] != 1) {
-                    kolor[i] = 1;
-                }
-                else {
-                    int o = 1;
-                    for (int e = 0; e < h; e++) {
-                        if (tmp[e] == o) {
-                            o++;
-                        }
-                        else {
-                            if (tmp[e] < o) {
-                                continue;
-                            }
-                            else {
-                                kolor[i] = o;
-                                delete[] tmp;
-                                break;
-                            }
-                        }
-                    }
-                    kolor[i] = o;
-                }
-            }
-            else {
-                kolor[i] = 1;
-                delete[] tmp;
-            }
-        }
-
-        for (int i = 0; i < liczba_wierzcholkow; i++) {
-            cout << kolor[i] << " ";
-        }
-        cout << endl;*/
-
-
         for (int i = 0; i < 2; i++) {
             cout << '?' << endl;
         }
-
-        //TO DO 8
+       
         long long int krawedzie_do_dopelnienia = ((liczba_wierzcholkow - 1) * liczba_wierzcholkow) / 2 - wszystkie_krawedzie / 2;
         cout << krawedzie_do_dopelnienia << endl;
 
