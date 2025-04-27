@@ -87,9 +87,9 @@ void KolorowanieLF(Wierzcholek* wierzcholki, unsigned long long int liczba_wierz
         wierzcholkiSort[i] = &wierzcholki[i];
     }
 
-    //debugPrintArray(wierzcholkiSort, liczba_wierzcholkow);
+   
     mergeSortLF(wierzcholkiSort, 0, liczba_wierzcholkow - 1);
-    //debugPrintArray(wierzcholkiSort, liczba_wierzcholkow);
+   
 
     wierzcholkiSort[0]->kolor = 1;
     for (unsigned long long int i = 1; i < liczba_wierzcholkow; i++) {
